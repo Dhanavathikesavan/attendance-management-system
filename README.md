@@ -254,10 +254,4 @@ before submitting, e.g. `screenshots/dashboard.png`._
 - **Automated tests** (pytest for the backend, React Testing Library for the frontend).
 - **Connection pooling** instead of opening a new MySQL connection per request.
 
-## 17. Interview Preparation
 
-See **[INTERVIEW_GUIDE.md](./INTERVIEW_GUIDE.md)** for a full explanation of the
-project, request flows, and 40+ likely interview questions with answers.
-
-See **[TESTING_CHECKLIST.md](./TESTING_CHECKLIST.md)** for the manual test
-checklist used to verify every mandatory feature before submission.
