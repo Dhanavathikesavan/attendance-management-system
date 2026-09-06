@@ -9,7 +9,7 @@ mark and review attendance, and see attendance statistics on a dashboard.
 
 ## 1. Project Overview
 
-This is a small, interview-friendly CRUD application built around one core idea:
+This is a small CRUD application built around one core idea:
 an admin manages a list of **employees**, and records daily **attendance** against
 them. The **dashboard** summarizes both.
 
