@@ -26,7 +26,7 @@ FLUSH PRIVILEGES;
 -- ---------------------------------------------------------------------
 -- Table: users
 -- Stores administrator login credentials.
--- Passwords are stored as bcrypt hashes, never in plain text.
+-- Passwords are stored as PBKDF2-SHA256 hashes, never in plain text.
 -- ---------------------------------------------------------------------
 CREATE TABLE users (
     id              INT AUTO_INCREMENT PRIMARY KEY,
@@ -110,7 +110,7 @@ CREATE INDEX idx_attendance_status ON attendance (attendance_status);
 -- Default admin user
 -- username: admin
 -- password: Admin@123
--- (this hash was generated with bcrypt / werkzeug generate_password_hash)
+-- (this hash was generated using Werkzeug password hashing)
 INSERT INTO users (username, password_hash, role) VALUES
 ('admin', 'pbkdf2:sha256:1000000$fAP5yXRDvtR8L8Hk$24e09f8e90a2090c00f62fe7c8e9bc87a57a1db9744b439b8522c9d854a4afd0', 'admin');
 
